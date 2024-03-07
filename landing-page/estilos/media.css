@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/*Media Queries*/
+
+/*Tablets*/
+@media screen and (min-width: 768px) {
+    /*header.menu*/
+    header {
+        background-color: black;
+        height: 50px;
+        padding-bottom: 5px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        width: 80px;
+
+        margin: 10px;
+        padding: 5px 10px;
+
+        text-align: center;
+        list-style-type: none;
+
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    li > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li:hover {
+        background-color: white;
+        border: 1px solid #0062ff;
+        cursor: pointer;
+    }
+
+    Li:hover > a {
+        color: #0062ff;
+    }
+
+    /*Main*/
+
+    main {
+        display: absolute;
+        position: relative;
+        height: 86vh;
+    }
+
+    main > section {
+        border: 2px solid white;
+        border-radius: 10px;
+
+        width: 700px;
+        height: 200px;
+        padding: 10px;
+        display: flex;
+
+        backdrop-filter: blur(8px);
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section  h1 {
+        color: white;
+        text-align: center;
+
+        margin-bottom: 10px;
+    }
+
+    section p {
+        margin: auto;
+        width: 200px;
+
+        color: white;
+        text-align: center;
+        line-height: 2em;
+    }
+
+    #texto {
+        margin-right: 20px;
+    }
+
+    #extra {
+        margin: 10px auto;
+
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+
+        color: black;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    .caixas {
+        width: 400px;
+        height: 30px;
+        margin: 5px;
+
+        border: 2px solid white;
+        border-radius: 3px;
+        background-color: transparent;
+
+        text-align: center;
+        color: black;
+
+    }
+
+    .caixas::placeholder {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+    }
+
+    .botao {
+        width: 190px;
+        height: 40px;
+        margin: 10px 5px;
+
+        border-radius: 10px;
+        border: 2px solid black;
+
+        font-size: 1em;
+    }
+
+    #quebra {
+        display: none;
+    }
+
+    .botao:active {
+        background-color: rgb(208, 250, 144);
+    }
+
+    footer {
+        background-color: black;
+
+        text-align: center;
+        color: white;
+
+        height: 5vh;
+        padding: 5px;
+    }
+}

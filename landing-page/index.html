@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="index.js"></script>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">east</span>
+        <menu id="aba">
+            <ul>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Voltar</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <div id="texto">
+                <h1>
+                    Faça seu cadastro conosco!
+                </h1>
+                <p>
+                    Aproveite nossa super promoção para viajar ainda este ano de 2024!
+                </p>
+                <p id="extra">
+                    Aproveite conosco
+                </p>
+            </div>
+        <form action="enviado.html">
+            <div>
+                <input type="text" name="nome" id="inome" placeholder="Nome Completo" required autocomplete="name" class="caixas">
+            </div>
+            <div>
+                <input type="email" name="mail" id="imail" placeholder="Seu e-mail" autocomplete="email" class="caixas">
+            </div>
+            <div>
+                <input type="tel" name="numero" id="inumero" autocomplete="tel" required pattern="ˆ\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(99) 99999-9999" class="caixas">
+            </div>
+            <div>
+                <input type="submit" value="Enviar" class="botao">
+                <br id="quebra">
+                <input type="reset" value="Limpar" class="botao">
+            </div>
+        </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; "Landing Page" feita para a apresentação de sexta!
+        </p>
+    </footer>
+</body>
+</html>

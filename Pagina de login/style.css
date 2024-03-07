@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+/*Variavel*/
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+/*Mobile first*/
+@media all {
+    body::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        background: black url(imagens/espaco.jpg) no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    #login {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.614);
+        overflow: hidden;
+        border: 2px solid black;
+        
+        width: 250px;
+        height: 510px;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        transition: width 0.1s;
+    }
+
+    #imagem {
+        background: black url(imagens/image.webp) no-repeat right center;
+        background-position: cover;
+        height: 200px;
+    }
+
+    #formu {
+        padding: 10px;
+    }
+
+    #formu > h1 {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    #formu > p {
+        margin-bottom: 10px;
+        font-size: 0.8em;
+    }
+
+    .divs {
+        position: relative;
+        width: 230px;
+        height: 40px;
+        background-color: #5f2c82;
+        margin: 5px auto 0px auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .material-symbols-outlined {
+        margin: 0px 3px;
+        color: white;
+    }
+
+    .caixas {
+        text-align: center;
+        position: absolute;
+        height: 30px;
+        width: 190px;
+        border-radius: 5px;
+        background-color: #94CFCD;
+        border: 0px;
+    }
+
+    #b1, #b2 {
+        width: 230px;
+        height: 40px;
+        margin-bottom: 5px;
+
+
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #b1 {
+        background-color: #71bebc;
+        border: 0px;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+    }
+
+    #b1:hover {
+        background-color: var(--cor1);
+    }
+
+    #b2 {
+        font-size: 1em;
+        color: black;
+        border: 1px solid var(--cor1);
+    }
+
+    #b2::after {
+        content: '\00A0\2709';
+    }
+
+    #b2:hover {
+        background-color: #49a09d;
+        color: white;
+    }
+
+    #botao {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/*Para Tablets*/
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body {
+        background: black url(imagens/espaco.jpg) no-repeat center center fixed;
+        background-size: cover;
+        width: 100vw;
+    }
+
+    #login {
+        width: 80vw;
+        height: 290px;
+    }
+
+    #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #formu {
+        float: right;
+        width: 70%;
+    }
+
+    .divs {
+        width: 90%;
+        height: 40px;
+    }
+
+    .caixas {
+        position: absolute;
+        height: 30px;
+        width: 90%;
+    }
+
+    #b1, #b2 {
+        width: 90%;
+        height: 40px;
+        margin-bottom: 5px;
+
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+}
+
+/*Para desktops*/
+@media screen and (min-width: 992px) {
+    body {
+        background: black url(imagens/espaco.jpg) no-repeat center center fixed;
+        background-size: cover;
+        width: 100vw;
+    }
+
+    .divs {
+        width: 450px;
+        height: 40px;
+    }
+
+    #login {
+        width: 950px;
+        height: 350px;
+    }
+
+    #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formu {
+        float: left;
+        width: 50%;
+    }
+
+    #formu > h1 {
+        font-size: 2em;
+    }
+
+    #formu > p {
+        font-size: 1em;
+        margin: 20px auto;
+        
+    }
+
+    .caixas {
+        position: absolute;
+        height: 30px;
+        width: 90%;
+    }
+
+    #b1, #b2 {
+        width: 450px;
+        height: 40px;
+        margin-bottom: 5px;
+
+
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}

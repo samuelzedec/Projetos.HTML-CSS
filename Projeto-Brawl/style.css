@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+:root {
+    --cor01: #194159;
+    --cor02: #BBF2D8;
+    --cor03: #68A683;
+    --cor04: #9CF299;
+    --cor05: #F28729;
+    --fonte01: 'Titillium Web', sans-serif;
+    --fonte02: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor04);
+}
+
+nav {
+    background-color: var(--cor01);
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+nav  a {
+    text-decoration: none;
+    color: var(--cor05);
+    font-family: var(--fonte01);
+    font-weight: 600;
+    
+    padding: 10px 15px;
+
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: var(--cor05);
+    color: var(--cor01);
+    text-shadow: none;
+}
+header {
+    background-color: var(--cor01);
+}
+
+header > div { 
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+div img {
+    width: 80%;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+
+    min-width: 350px;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 10px;
+
+    font-family: var(--fonte01);
+}
+
+main p {
+    padding: 5px;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+span {
+    color: var(--cor03);
+}
+
+article > h1 {
+    font-family: var(--fonte02);
+    color: var(--cor05);
+    padding: 5px;
+    font-size: 2.2em;
+}
+
+.link {
+    display: block;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+    
+    color: white;
+    background-color: #194159;
+    
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.link:hover {
+    color: var(--cor01);
+    background-color: white;
+}
+
+.link::before {
+    content: '\2705\00A0';
+}
+
+section {
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+section > p {
+    font-weight: 600;
+    margin: 5px;
+}
+
+section > h2 {
+    background-color: #194159;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+section  img {
+    width: 40%;
+}
+
+section > h2 {
+    background-color: #194159;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+#s1 {
+    background-color: yellow;
+}
+
+#s2 {
+    background-color: red;
+}
+
+#s3 {
+    background-color: purple;
+}
+
+#s4 {
+    background-color: lightblue;
+}
+
+#s5 {
+    background-color: rgb(154, 249, 11);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0px;
+}
+
+footer img {
+    max-height: 30px;
+    max-width: 350px;
+    margin: 5px;
+}
