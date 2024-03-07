@@ -21,7 +21,7 @@
     }
 
     html, body {
-        background: black url(imagens/espaco.jpg) no-repeat center center fixed;
+        background-color: var(--cor1);
         background-size: cover;
         height: 100vh;
         width: 100vw;
@@ -53,7 +53,7 @@
     }
 
     #imagem {
-        background: black url(imagens/image.webp) no-repeat right center;
+        background: black url(imagens/pexels-possessed-photography-10706680.jpg) no-repeat right center;
         background-position: cover;
         height: 200px;
     }
@@ -143,8 +143,7 @@
 /*Para Tablets*/
 @media screen and (min-width: 768px) and (max-width:992px) {
     body {
-        background: black url(imagens/espaco.jpg) no-repeat center center fixed;
-        background-size: cover;
+        background-image: linear-gradient(to top, var(--cor1), var(--cor2));
         width: 100vw;
     }
 
@@ -189,7 +188,7 @@
 /*Para desktops*/
 @media screen and (min-width: 992px) {
     body {
-        background: black url(imagens/espaco.jpg) no-repeat center center fixed;
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
         background-size: cover;
         width: 100vw;
     }
