@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Cadastro</title>
+    <style>
+        main {
+            height: 93vh;
+        }
+        form {
+            height: 380px;
+        }
+
+        #btn {
+            width: 100px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <form action="index.php">
+        <div id="title">Cadastro</div>
+        <div>
+            <input type="text" name="tex" id="tex" placeholder="Nome:" required class="inp" autocomplete="name">
+        <div>
+            <input type="email" name="mail" id="imail" placeholder="E-mail:" required class="inp" autocomplete="email">
+        </div>
+        <div>
+            <input type="password" name="pass" id="ipass" placeholder="Senha:" required class="inp" autocomplete="new-password">
+        </div>
+        <div>
+            <input type="password" name="pass" id="ipass2" placeholder="Confirme sua senha" required class="inp" autocomplete="new-password">
+        </div>
+        <div>
+            <input type="submit" value="Cadastrar" id="btn">
+        </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p> &copy; Página de Cadastro feita por <a href="https://github.com/bielsxz" target="_blank" rel="external">J.Gabriel</a> e <a href="https://github.com/samuelzedec" target="_blank" rel="external">Samuel Zedec</a></p>
+</footer>
+</body>
+</html>
