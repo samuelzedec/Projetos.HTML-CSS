@@ -14,6 +14,10 @@ body {
     background-size: cover;
 }
 
+input:focus {
+    outline: 0;
+}
+
 /*Mobile First*/
 @media screen and (max-width: 767px) {
     /*1- Header.Menu*/
