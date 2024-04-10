@@ -1,60 +1,42 @@
+<!--Trabalho feito em dupla-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="estilos/mobile.css">
-    <link rel="stylesheet" href="estilos/media.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <script src="index.js"></script>
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="images/icons8-login-arredondado-à-direita-50.png" type="image/x-icon">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
-        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">east</span>
-        <menu id="aba">
-            <ul>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Voltar</a></li>
-            </ul>
-        </menu>
+            <h1>
+                <span>Onebit</span>Code
+            </h1>
     </header>
     <main>
         <section>
-            <div id="texto">
-                <h1>
-                    Faça seu cadastro conosco!
-                </h1>
-                <p>
-                    Aproveite nossa super promoção para viajar ainda este ano de 2024!
-                </p>
-                <p id="extra">
-                    Aproveite conosco
-                </p>
-            </div>
-        <form action="enviado.html">
-            <div>
-                <input type="text" name="nome" id="inome" placeholder="Nome Completo" required autocomplete="name" class="caixas">
-            </div>
-            <div>
-                <input type="email" name="mail" id="imail" placeholder="Seu e-mail" autocomplete="email" class="caixas">
-            </div>
-            <div>
-                <input type="tel" name="numero" id="inumero" autocomplete="tel" required pattern="ˆ\(\d{2}\)\d{4, 5}-\d{4}$" placeholder="(99) 99999-9999" class="caixas">
-            </div>
-            <div>
-                <input type="submit" value="Enviar" class="botao">
-                <br id="quebra">
-                <input type="reset" value="Limpar" class="botao">
-            </div>
-        </form>
+            <form action="index.php" autocomplete="off">
+                <div class="title-center"><h2>Login</h2></div>
+                <div>
+                    <input type="email" name="mail" id="imail" placeholder="E-mail:" required class="inp" autocomplete="off">
+                </div>
+                <div>
+                    <input type="password" name="pass" id="ipass" placeholder="Senha:" required class="inp" autocomplete="off">
+                </div>
+                <div class="title-center">
+                    <input type="submit" value="Entrar" id="btn">
+                    <p>
+                        <a href="cadastro.html" target="_blank" rel="next">Criar conta?</a>
+                    </p>
+                </div>
+            </form>
+        
         </section>
     </main>
     <footer>
         <p>
-            &copy; "Landing Page" feita para a apresentação de sexta!
+            &copy; Página de Login feita por <a href="https://github.com/bielsxz" target="_blank" rel="external">J.Gabriel</a> e <a href="https://github.com/samuelzedec" target="_blank" rel="external">Samuel Zedec</a> 
         </p>
     </footer>
 </body>
